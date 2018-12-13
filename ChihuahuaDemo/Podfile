@@ -1,0 +1,20 @@
+platform :ios, '10.0'
+use_frameworks!
+inhibit_all_warnings!
+
+def usual_repo_pod
+  pod 'GPUImage'
+end
+
+def usual_ui_pod
+end
+
+target 'ChihuahuaDemo' do
+  usual_repo_pod
+  usual_ui_pod
+end
+
+post_install do |installer|
+end
+
+
