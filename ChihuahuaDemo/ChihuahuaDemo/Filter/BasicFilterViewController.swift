@@ -17,13 +17,17 @@ class BasicFilterViewController: UIViewController {
         GPUImageEmbossFilter(),
         GPUImageGammaFilter(),
         GPUImageKuwaharaFilter(),
+        GPUImageCrosshatchFilter(),
+        GPUImageVignetteFilter()
     ]
     var filterNames: [String] = [
         "Sepia Filter 褐色",
         "Toon Filter 卡通",
         "Emboss Filter 浮雕效果",
         "Gamma Filter 伽马线",
-        "Kuwahara Filter 桑原(Kuwahara)滤波"
+        "Kuwahara Filter 桑原(Kuwahara)滤波",
+        "Crosshatch Filter 交叉线阴影",
+        "Vignette Filter 晕影",
     ]
     var index: Int = 0
     
@@ -46,7 +50,6 @@ class BasicFilterViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
         next()
     }
     

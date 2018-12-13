@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84350C9021C2194000C19187 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84350C8F21C2194000C19187 /* MenuViewController.swift */; };
+		84350C9421C27F5600C19187 /* BeautyCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84350C9321C27F5600C19187 /* BeautyCameraViewController.swift */; };
 		84EBC02221C15AD3006A2066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02121C15AD3006A2066 /* AppDelegate.swift */; };
 		84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */; };
 		84EBC02721C15AD3006A2066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EBC02521C15AD3006A2066 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		5DBB5BB7E998DCB627FB1C13 /* Pods-ChihuahuaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChihuahuaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChihuahuaDemo/Pods-ChihuahuaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		84350C8F21C2194000C19187 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		84350C9321C27F5600C19187 /* BeautyCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyCameraViewController.swift; sourceTree = "<group>"; };
 		84EBC01E21C15AD3006A2066 /* ChihuahuaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChihuahuaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EBC02121C15AD3006A2066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFilterViewController.swift; sourceTree = "<group>"; };
@@ -80,12 +82,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		84350C9121C227CC00C19187 /* TestCase */ = {
+		84350C9121C227CC00C19187 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
 				84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */,
 			);
-			path = TestCase;
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		84350C9221C27F3600C19187 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				84350C9321C27F5600C19187 /* BeautyCameraViewController.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		84EBC01521C15AD3006A2066 = {
@@ -111,7 +121,8 @@
 		84EBC02021C15AD3006A2066 /* ChihuahuaDemo */ = {
 			isa = PBXGroup;
 			children = (
-				84350C9121C227CC00C19187 /* TestCase */,
+				84350C9221C27F3600C19187 /* Camera */,
+				84350C9121C227CC00C19187 /* Filter */,
 				84EBC02121C15AD3006A2066 /* AppDelegate.swift */,
 				84350C8F21C2194000C19187 /* MenuViewController.swift */,
 				84EBC02521C15AD3006A2066 /* Main.storyboard */,
@@ -240,12 +251,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ChihuahuaDemo/Pods-ChihuahuaDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -283,6 +296,7 @@
 			files = (
 				84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */,
 				84350C9021C2194000C19187 /* MenuViewController.swift in Sources */,
+				84350C9421C27F5600C19187 /* BeautyCameraViewController.swift in Sources */,
 				84EBC02221C15AD3006A2066 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

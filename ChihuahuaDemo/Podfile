@@ -3,10 +3,11 @@ use_frameworks!
 inhibit_all_warnings!
 
 def usual_repo_pod
-  pod 'GPUImage'
+    pod 'GPUImage'
 end
 
 def usual_ui_pod
+    pod 'SnapKit', '~> 4.0.0'
 end
 
 target 'ChihuahuaDemo' do
