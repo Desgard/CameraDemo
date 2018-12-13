@@ -9,12 +9,27 @@
 import UIKit
 import GPUImage
 
-class ViewController: UIViewController {
+class BasicFilterViewController: UIViewController {
     
-    var filters: [GPUImageFilter] = []
+    var filters: [GPUImageFilter] = [
+        GPUImageSepiaFilter(),
+        GPUImageToonFilter(),
+        GPUImageEmbossFilter(),
+        GPUImageGammaFilter(),
+        GPUImageKuwaharaFilter(),
+    ]
+    var filterNames: [String] = [
+        "Sepia Filter 褐色",
+        "Toon Filter 卡通",
+        "Emboss Filter 浮雕效果",
+        "Gamma Filter 伽马线",
+        "Kuwahara Filter 桑原(Kuwahara)滤波"
+    ]
     var index: Int = 0
     
+    @IBOutlet weak var originImageView: UIImageView!
     @IBOutlet weak var testImageView: UIImageView!
+    @IBOutlet weak var filterEffect: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,18 +37,24 @@ class ViewController: UIViewController {
     }
     
     private func initialViews() {
-        testImageView.center = view.center
+        originImageView.layer.masksToBounds = true
+        originImageView.layer.cornerRadius = 4
+        testImageView.layer.masksToBounds = true
+        testImageView.layer.cornerRadius = 4
         
-        filters.append(GPUImageSepiaFilter())
-        filters.append(GPUImageToonFilter())
-        filters.append(GPUImageEmbossFilter())
+        next()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        next()
+    }
+    
+    private func next() {
         index += 1
         index %= filters.count
         testImageView.image = process()
+        filterEffect.text = filterNames[index]
     }
     
 

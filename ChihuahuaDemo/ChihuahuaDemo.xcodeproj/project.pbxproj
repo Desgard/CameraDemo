@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84350C9021C2194000C19187 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84350C8F21C2194000C19187 /* MenuViewController.swift */; };
 		84EBC02221C15AD3006A2066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02121C15AD3006A2066 /* AppDelegate.swift */; };
-		84EBC02421C15AD3006A2066 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02321C15AD3006A2066 /* ViewController.swift */; };
+		84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */; };
 		84EBC02721C15AD3006A2066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EBC02521C15AD3006A2066 /* Main.storyboard */; };
 		84EBC02921C15AD4006A2066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EBC02821C15AD4006A2066 /* Assets.xcassets */; };
 		84EBC02C21C15AD4006A2066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EBC02A21C15AD4006A2066 /* LaunchScreen.storyboard */; };
@@ -28,9 +29,10 @@
 
 /* Begin PBXFileReference section */
 		5DBB5BB7E998DCB627FB1C13 /* Pods-ChihuahuaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChihuahuaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChihuahuaDemo/Pods-ChihuahuaDemo.release.xcconfig"; sourceTree = "<group>"; };
+		84350C8F21C2194000C19187 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		84EBC01E21C15AD3006A2066 /* ChihuahuaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChihuahuaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EBC02121C15AD3006A2066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84EBC02321C15AD3006A2066 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFilterViewController.swift; sourceTree = "<group>"; };
 		84EBC02621C15AD3006A2066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84EBC02821C15AD4006A2066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EBC02B21C15AD4006A2066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		84350C9121C227CC00C19187 /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+				84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */,
+			);
+			path = TestCase;
+			sourceTree = "<group>";
+		};
 		84EBC01521C15AD3006A2066 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +111,9 @@
 		84EBC02021C15AD3006A2066 /* ChihuahuaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84350C9121C227CC00C19187 /* TestCase */,
 				84EBC02121C15AD3006A2066 /* AppDelegate.swift */,
-				84EBC02321C15AD3006A2066 /* ViewController.swift */,
+				84350C8F21C2194000C19187 /* MenuViewController.swift */,
 				84EBC02521C15AD3006A2066 /* Main.storyboard */,
 				84EBC02821C15AD4006A2066 /* Assets.xcassets */,
 				84EBC02A21C15AD4006A2066 /* LaunchScreen.storyboard */,
@@ -270,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EBC02421C15AD3006A2066 /* ViewController.swift in Sources */,
+				84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */,
+				84350C9021C2194000C19187 /* MenuViewController.swift in Sources */,
 				84EBC02221C15AD3006A2066 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
