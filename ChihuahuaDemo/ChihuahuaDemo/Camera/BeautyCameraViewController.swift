@@ -13,9 +13,10 @@ import SnapKit
 class BeautyCameraViewController: UIViewController {
     
     lazy private var camera: GPUImageStillCamera = {
-        guard let _camera = GPUImageStillCamera(sessionPreset: AVCaptureSession.Preset.vga640x480.rawValue, cameraPosition: .back) else {
+        guard let _camera = GPUImageStillCamera(sessionPreset: AVCaptureSession.Preset.hd1920x1080.rawValue, cameraPosition: .front) else {
             return GPUImageStillCamera()
         }
+        _camera.horizontallyMirrorFrontFacingCamera = true
         _camera.outputImageOrientation = .portrait
         bilateralFilter.addTarget(brightnessFilter)
         _camera.addTarget(bilateralFilter)
@@ -29,15 +30,23 @@ class BeautyCameraViewController: UIViewController {
         return view
     }()
     
+    // 磨皮滤镜
     lazy private var bilateralFilter: GPUImageBilateralFilter = {
         let filter = GPUImageBilateralFilter()
         filter.distanceNormalizationFactor = 8
         return filter
     }()
     
+    // 美白滤镜
     lazy private var brightnessFilter: GPUImageBrightnessFilter = {
         let filter = GPUImageBrightnessFilter()
-        filter.brightness = 0
+        filter.brightness = 0.2
+        return filter
+    }()
+    
+    // 光饱和
+    lazy private var satureationFilter: GPUImageSaturationFilter = {
+        let filter = GPUImageSaturationFilter()
         return filter
     }()
     

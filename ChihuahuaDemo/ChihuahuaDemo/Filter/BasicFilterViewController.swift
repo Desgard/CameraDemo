@@ -18,7 +18,8 @@ class BasicFilterViewController: UIViewController {
         GPUImageGammaFilter(),
         GPUImageKuwaharaFilter(),
         GPUImageCrosshatchFilter(),
-        GPUImageVignetteFilter()
+        GPUImageVignetteFilter(),
+        GPUImageBulgeDistortionFilter(),
     ]
     var filterNames: [String] = [
         "Sepia Filter 褐色",
@@ -28,6 +29,7 @@ class BasicFilterViewController: UIViewController {
         "Kuwahara Filter 桑原(Kuwahara)滤波",
         "Crosshatch Filter 交叉线阴影",
         "Vignette Filter 晕影",
+        "Bulge Distortion 鱼眼",
     ]
     var index: Int = 0
     
