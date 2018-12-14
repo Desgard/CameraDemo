@@ -59,7 +59,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aF-dG-FFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2856.521739130435" y="131.25"/>
+            <point key="canvasLocation" x="2933" y="131"/>
+        </scene>
+        <!--鱼眼镜效果-->
+        <scene sceneID="4wk-Y6-dhZ">
+            <objects>
+                <viewController id="dsY-34-1Ix" customClass="BulgeViewController" customModule="ChihuahuaDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rFR-F5-g5h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulge-test" translatesAutoresizingMaskIntoConstraints="NO" id="Dn1-dL-Pkz">
+                                <rect key="frame" x="60" y="169" width="295" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="281" id="JMv-zD-QSW"/>
+                                    <constraint firstAttribute="height" constant="281" id="zEA-sc-eWJ"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5bC-1s-lHL">
+                                <rect key="frame" x="18" y="569" width="378" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CenterX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coJ-IS-Qwf">
+                                <rect key="frame" x="20" y="538" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CenterY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuk-LR-JvD">
+                                <rect key="frame" x="20" y="599" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-Ce-ksM">
+                                <rect key="frame" x="18" y="630" width="378" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXc-Mm-9iA">
+                                <rect key="frame" x="20" y="660" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cn3-Lk-Jqj">
+                                <rect key="frame" x="18" y="691" width="378" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNg-6J-rfE">
+                                <rect key="frame" x="20" y="721" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FjL-Go-zfD">
+                                <rect key="frame" x="18" y="750" width="378" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cn3-Lk-Jqj" firstAttribute="top" secondItem="zXc-Mm-9iA" secondAttribute="bottom" constant="10" id="3fX-HY-07L"/>
+                            <constraint firstItem="wLg-kl-p0l" firstAttribute="trailing" secondItem="5bC-1s-lHL" secondAttribute="trailing" constant="20" id="5k2-6L-3nO"/>
+                            <constraint firstItem="Dn1-dL-Pkz" firstAttribute="leading" secondItem="wLg-kl-p0l" secondAttribute="leading" constant="60" id="GU4-hc-JUw"/>
+                            <constraint firstItem="XhY-Ce-ksM" firstAttribute="top" secondItem="fuk-LR-JvD" secondAttribute="bottom" constant="10" id="Hsz-jh-cGN"/>
+                            <constraint firstItem="XhY-Ce-ksM" firstAttribute="leading" secondItem="fuk-LR-JvD" secondAttribute="leading" id="JyP-mY-k8p"/>
+                            <constraint firstItem="cn3-Lk-Jqj" firstAttribute="leading" secondItem="zXc-Mm-9iA" secondAttribute="leading" id="LkD-FB-MS3"/>
+                            <constraint firstItem="xNg-6J-rfE" firstAttribute="top" secondItem="cn3-Lk-Jqj" secondAttribute="bottom" id="Ntx-sR-Sow"/>
+                            <constraint firstItem="5bC-1s-lHL" firstAttribute="leading" secondItem="wLg-kl-p0l" secondAttribute="leading" constant="20" id="O0Z-Ik-VcC"/>
+                            <constraint firstItem="zXc-Mm-9iA" firstAttribute="top" secondItem="XhY-Ce-ksM" secondAttribute="bottom" id="SOM-E8-2R3"/>
+                            <constraint firstItem="coJ-IS-Qwf" firstAttribute="top" secondItem="Dn1-dL-Pkz" secondAttribute="bottom" constant="88" id="UD4-L4-ssM"/>
+                            <constraint firstItem="fuk-LR-JvD" firstAttribute="top" secondItem="5bC-1s-lHL" secondAttribute="bottom" id="Vd2-BB-h8T"/>
+                            <constraint firstItem="coJ-IS-Qwf" firstAttribute="leading" secondItem="5bC-1s-lHL" secondAttribute="leading" id="Zm1-Mu-7no"/>
+                            <constraint firstItem="FjL-Go-zfD" firstAttribute="trailing" secondItem="cn3-Lk-Jqj" secondAttribute="trailing" id="a7L-pU-j7i"/>
+                            <constraint firstItem="fuk-LR-JvD" firstAttribute="leading" secondItem="5bC-1s-lHL" secondAttribute="leading" id="eT3-lF-d6R"/>
+                            <constraint firstItem="zXc-Mm-9iA" firstAttribute="leading" secondItem="XhY-Ce-ksM" secondAttribute="leading" id="eye-VB-m3h"/>
+                            <constraint firstItem="5bC-1s-lHL" firstAttribute="top" secondItem="coJ-IS-Qwf" secondAttribute="bottom" constant="10" id="iZ8-NE-3bn"/>
+                            <constraint firstItem="XhY-Ce-ksM" firstAttribute="trailing" secondItem="5bC-1s-lHL" secondAttribute="trailing" id="jfJ-Cj-CIt"/>
+                            <constraint firstItem="xNg-6J-rfE" firstAttribute="leading" secondItem="cn3-Lk-Jqj" secondAttribute="leading" id="kHY-fc-vS1"/>
+                            <constraint firstItem="Dn1-dL-Pkz" firstAttribute="top" secondItem="wLg-kl-p0l" secondAttribute="top" constant="29" id="mL4-fC-a6D"/>
+                            <constraint firstItem="cn3-Lk-Jqj" firstAttribute="trailing" secondItem="XhY-Ce-ksM" secondAttribute="trailing" id="rH1-48-pfb"/>
+                            <constraint firstItem="FjL-Go-zfD" firstAttribute="top" secondItem="xNg-6J-rfE" secondAttribute="bottom" constant="8" id="wpD-Jz-4Hk"/>
+                            <constraint firstItem="FjL-Go-zfD" firstAttribute="leading" secondItem="xNg-6J-rfE" secondAttribute="leading" id="ykN-G3-43z"/>
+                            <constraint firstItem="wLg-kl-p0l" firstAttribute="trailing" secondItem="Dn1-dL-Pkz" secondAttribute="trailing" constant="59" id="z0T-AY-dWe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wLg-kl-p0l"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="鱼眼镜效果" id="GOS-2b-99t"/>
+                    <connections>
+                        <outlet property="effectImageView" destination="Dn1-dL-Pkz" id="dGt-0T-R5M"/>
+                        <outlet property="effectSlide" destination="5bC-1s-lHL" id="hqi-vj-K60"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSr-xk-tKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2930.434782608696" y="820.98214285714278"/>
         </scene>
         <!--Photo Filter Demo-->
         <scene sceneID="BIf-ji-pq7">
@@ -123,11 +213,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="lxz-4q-uYZ" detailTextLabel="reP-Uh-CAm" style="IBUITableViewCellStyleSubtitle" id="XD7-OC-yli">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="lxz-4q-uYZ" detailTextLabel="reP-Uh-CAm" style="IBUITableViewCellStyleSubtitle" id="XD7-OC-yli">
                                         <rect key="frame" x="0.0" y="123" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XD7-OC-yli" id="QmI-By-EWA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="鱼眼镜效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lxz-4q-uYZ">
@@ -137,8 +227,91 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="【待完成】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="reP-Uh-CAm">
-                                                    <rect key="frame" x="20" y="25.5" width="61.5" height="14.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="萌宠镜头" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="reP-Uh-CAm">
+                                                    <rect key="frame" x="20" y="25.5" width="49.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dsY-34-1Ix" kind="push" id="ajr-Ll-dZf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="8iZ-mK-zsZ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="VS3-3t-4WV" detailTextLabel="gCo-yg-Kiy" style="IBUITableViewCellStyleSubtitle" id="4Ty-Bs-o7p">
+                                        <rect key="frame" x="0.0" y="203" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Ty-Bs-o7p" id="9Z7-U5-d9i">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="喵星人滤镜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VS3-3t-4WV">
+                                                    <rect key="frame" x="20" y="5" width="87" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="给猫搭配的滤镜效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gCo-yg-Kiy">
+                                                    <rect key="frame" x="20" y="25.5" width="110.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="55W-Mn-IOg" detailTextLabel="fpQ-GB-6j6" style="IBUITableViewCellStyleSubtitle" id="5p9-ss-7fC">
+                                        <rect key="frame" x="0.0" y="247" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5p9-ss-7fC" id="QwG-EQ-rQc">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="单身汪滤镜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="55W-Mn-IOg">
+                                                    <rect key="frame" x="20" y="5" width="87" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="给狗狗搭配的滤镜效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fpQ-GB-6j6">
+                                                    <rect key="frame" x="20" y="25.5" width="123" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Usk-SC-kow">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="3VB-rQ-XK1" detailTextLabel="TwD-zV-P2p" style="IBUITableViewCellStyleSubtitle" id="9W0-zj-hQ1">
+                                        <rect key="frame" x="0.0" y="327" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9W0-zj-hQ1" id="UX1-Oi-OZJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="滤镜超短视频拍摄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3VB-rQ-XK1">
+                                                    <rect key="frame" x="20" y="5" width="139" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Live Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TwD-zV-P2p">
+                                                    <rect key="frame" x="20" y="25.5" width="59.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -181,6 +354,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bulge-test" width="450" height="281"/>
         <image name="test-1" width="1024" height="768"/>
     </resources>
 </document>

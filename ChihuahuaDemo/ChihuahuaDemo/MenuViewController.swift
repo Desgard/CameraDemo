@@ -21,13 +21,19 @@ class MenuViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        switch indexPath.row {
-        case 0:
-            break
-        case 1:
-            navigationController?.pushViewController(BeautyCameraViewController(), animated: true)
-        default:
-            break
+        if indexPath.section == 0 {
+            switch indexPath.row {
+            case 1:
+                navigationController?.pushViewController(BeautyCameraViewController(), animated: true)
+            default:
+                break
+            }
+        }
+        else if indexPath.section == 1 {
+            
+        }
+        else if indexPath.section == 2 {
+            
         }
     }
 }

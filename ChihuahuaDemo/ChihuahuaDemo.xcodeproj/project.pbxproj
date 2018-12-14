@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		84350C9021C2194000C19187 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84350C8F21C2194000C19187 /* MenuViewController.swift */; };
 		84350C9421C27F5600C19187 /* BeautyCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84350C9321C27F5600C19187 /* BeautyCameraViewController.swift */; };
+		84B083AB21C353C400CBA245 /* BulgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B083AA21C353C400CBA245 /* BulgeViewController.swift */; };
 		84EBC02221C15AD3006A2066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02121C15AD3006A2066 /* AppDelegate.swift */; };
 		84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */; };
 		84EBC02721C15AD3006A2066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EBC02521C15AD3006A2066 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		5DBB5BB7E998DCB627FB1C13 /* Pods-ChihuahuaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChihuahuaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChihuahuaDemo/Pods-ChihuahuaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		84350C8F21C2194000C19187 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		84350C9321C27F5600C19187 /* BeautyCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyCameraViewController.swift; sourceTree = "<group>"; };
+		84B083AA21C353C400CBA245 /* BulgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulgeViewController.swift; sourceTree = "<group>"; };
 		84EBC01E21C15AD3006A2066 /* ChihuahuaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChihuahuaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EBC02121C15AD3006A2066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFilterViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		84B083A921C34D2E00CBA245 /* Bulge */ = {
+			isa = PBXGroup;
+			children = (
+				84B083AA21C353C400CBA245 /* BulgeViewController.swift */,
+			);
+			path = Bulge;
+			sourceTree = "<group>";
+		};
 		84EBC01521C15AD3006A2066 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		84EBC02021C15AD3006A2066 /* ChihuahuaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84B083A921C34D2E00CBA245 /* Bulge */,
 				84350C9221C27F3600C19187 /* Camera */,
 				84350C9121C227CC00C19187 /* Filter */,
 				84EBC02121C15AD3006A2066 /* AppDelegate.swift */,
@@ -295,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */,
+				84B083AB21C353C400CBA245 /* BulgeViewController.swift in Sources */,
 				84350C9021C2194000C19187 /* MenuViewController.swift in Sources */,
 				84350C9421C27F5600C19187 /* BeautyCameraViewController.swift in Sources */,
 				84EBC02221C15AD3006A2066 /* AppDelegate.swift in Sources */,
