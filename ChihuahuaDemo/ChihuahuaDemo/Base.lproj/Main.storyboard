@@ -143,8 +143,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="鱼眼镜效果" id="GOS-2b-99t"/>
                     <connections>
+                        <outlet property="centerXSlide" destination="5bC-1s-lHL" id="Hg5-uR-7aj"/>
+                        <outlet property="centerYSlide" destination="XhY-Ce-ksM" id="y1P-RC-fAF"/>
                         <outlet property="effectImageView" destination="Dn1-dL-Pkz" id="dGt-0T-R5M"/>
-                        <outlet property="effectSlide" destination="5bC-1s-lHL" id="hqi-vj-K60"/>
+                        <outlet property="radiusSlide" destination="cn3-Lk-Jqj" id="c16-At-Maf"/>
+                        <outlet property="scaleSlide" destination="FjL-Go-zfD" id="3nX-W9-iBS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSr-xk-tKo" userLabel="First Responder" sceneMemberID="firstResponder"/>

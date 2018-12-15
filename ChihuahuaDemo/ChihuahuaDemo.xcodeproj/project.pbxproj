@@ -16,6 +16,7 @@
 		84EBC02921C15AD4006A2066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EBC02821C15AD4006A2066 /* Assets.xcassets */; };
 		84EBC02C21C15AD4006A2066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EBC02A21C15AD4006A2066 /* LaunchScreen.storyboard */; };
 		84EBC03721C15AD4006A2066 /* ChihuahuaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC03621C15AD4006A2066 /* ChihuahuaDemoTests.swift */; };
+		84EBC04221C49EAD006A2066 /* CatFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC04121C49EAD006A2066 /* CatFilterViewController.swift */; };
 		9D5D29A568A909FA727AF206 /* Pods_ChihuahuaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DF56AA021E0CE3B418F702 /* Pods_ChihuahuaDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		84EBC03221C15AD4006A2066 /* ChihuahuaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChihuahuaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EBC03621C15AD4006A2066 /* ChihuahuaDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChihuahuaDemoTests.swift; sourceTree = "<group>"; };
 		84EBC03821C15AD4006A2066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EBC04121C49EAD006A2066 /* CatFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFilterViewController.swift; sourceTree = "<group>"; };
 		8EA108B894812CD5A08967D0 /* Pods-ChihuahuaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChihuahuaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChihuahuaDemo/Pods-ChihuahuaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D3DF56AA021E0CE3B418F702 /* Pods_ChihuahuaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChihuahuaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */,
+				84EBC04121C49EAD006A2066 /* CatFilterViewController.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */,
 				84B083AB21C353C400CBA245 /* BulgeViewController.swift in Sources */,
 				84350C9021C2194000C19187 /* MenuViewController.swift in Sources */,
+				84EBC04221C49EAD006A2066 /* CatFilterViewController.swift in Sources */,
 				84350C9421C27F5600C19187 /* BeautyCameraViewController.swift in Sources */,
 				84EBC02221C15AD3006A2066 /* AppDelegate.swift in Sources */,
 			);
