@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aF-dG-FFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2933" y="131"/>
+            <point key="canvasLocation" x="3029" y="-647"/>
         </scene>
         <!--鱼眼镜效果-->
         <scene sceneID="4wk-Y6-dhZ">
@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSr-xk-tKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2930.434782608696" y="820.98214285714278"/>
+            <point key="canvasLocation" x="3877" y="-648"/>
         </scene>
         <!--Photo Filter Demo-->
         <scene sceneID="BIf-ji-pq7">
@@ -270,6 +270,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="lJd-Eh-RtQ" kind="push" id="Sw2-xU-xXV"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="55W-Mn-IOg" detailTextLabel="fpQ-GB-6j6" style="IBUITableViewCellStyleSubtitle" id="5p9-ss-7fC">
                                         <rect key="frame" x="0.0" y="247" width="414" height="44"/>
@@ -337,6 +340,35 @@
             </objects>
             <point key="canvasLocation" x="1908" y="131.78410794602701"/>
         </scene>
+        <!--喵星人滤镜-->
+        <scene sceneID="gw4-SG-E50">
+            <objects>
+                <viewController id="lJd-Eh-RtQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gre-dX-ShE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat-filter-test" translatesAutoresizingMaskIntoConstraints="NO" id="BUv-W1-s4G">
+                                <rect key="frame" x="25" y="150" width="364" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Evc-yi-qDl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BUv-W1-s4G" firstAttribute="top" secondItem="zVL-vd-sTr" secondAttribute="top" constant="10" id="0h8-WH-ZSc"/>
+                            <constraint firstItem="BUv-W1-s4G" firstAttribute="leading" secondItem="zVL-vd-sTr" secondAttribute="leading" constant="25" id="DMb-GI-QEI"/>
+                            <constraint firstItem="zVL-vd-sTr" firstAttribute="trailing" secondItem="BUv-W1-s4G" secondAttribute="trailing" constant="25" id="ov6-f4-Zdx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zVL-vd-sTr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="喵星人滤镜" id="on6-60-9w5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4z-Fw-AQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3028.985507246377" y="130.58035714285714"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="a2D-ym-xMz">
             <objects>
@@ -358,6 +390,7 @@
     </scenes>
     <resources>
         <image name="bulge-test" width="450" height="281"/>
+        <image name="cat-filter-test" width="1200" height="1004"/>
         <image name="test-1" width="1024" height="768"/>
     </resources>
 </document>

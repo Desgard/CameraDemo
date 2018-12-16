@@ -1,20 +1,28 @@
 PODS:
   - GPUImage (0.1.7)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
   - SnapKit (4.0.1)
 
 DEPENDENCIES:
   - GPUImage
+  - IGListKit (~> 3.0)
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - GPUImage
+    - IGListKit
     - SnapKit
 
 SPEC CHECKSUMS:
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 99b596f110928279890cf34674a13bfc63205938
+PODFILE CHECKSUM: d800b4799935639c6bc6fda6bb6e9885d9681d71
 
 COCOAPODS: 1.5.3

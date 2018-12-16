@@ -7,8 +7,26 @@
 //
 
 import UIKit
+import IGListKit
 
 class CatFilterViewController: UIViewController {
+    
+    lazy private var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        return collectionView
+    }()
+    
+    lazy private var updater: ListAdapterUpdater = {
+        let updater = ListAdapterUpdater()
+        return updater
+    }()
+    
+    lazy private var adapter: ListAdapter = {
+        let adapter = ListAdapter(updater: updater, viewController: self)
+        adapter.collectionView = collectionView
+        return adapter
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()

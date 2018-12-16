@@ -7,6 +7,7 @@ def usual_repo_pod
 end
 
 def usual_ui_pod
+    pod 'IGListKit', '~> 3.0'
     pod 'SnapKit', '~> 4.0.0'
 end
 
