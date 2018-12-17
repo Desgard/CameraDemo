@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		84350C9021C2194000C19187 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84350C8F21C2194000C19187 /* MenuViewController.swift */; };
 		84350C9421C27F5600C19187 /* BeautyCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84350C9321C27F5600C19187 /* BeautyCameraViewController.swift */; };
+		848567C521C72DBD00FC9BE3 /* FilterItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848567C421C72DBD00FC9BE3 /* FilterItemCollectionViewCell.swift */; };
+		848567C821C72E7800FC9BE3 /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848567C721C72E7800FC9BE3 /* FilterItem.swift */; };
 		84B083AB21C353C400CBA245 /* BulgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B083AA21C353C400CBA245 /* BulgeViewController.swift */; };
 		84EBC02221C15AD3006A2066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02121C15AD3006A2066 /* AppDelegate.swift */; };
 		84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */; };
@@ -34,6 +36,8 @@
 		5DBB5BB7E998DCB627FB1C13 /* Pods-ChihuahuaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChihuahuaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChihuahuaDemo/Pods-ChihuahuaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		84350C8F21C2194000C19187 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		84350C9321C27F5600C19187 /* BeautyCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyCameraViewController.swift; sourceTree = "<group>"; };
+		848567C421C72DBD00FC9BE3 /* FilterItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		848567C721C72E7800FC9BE3 /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
 		84B083AA21C353C400CBA245 /* BulgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulgeViewController.swift; sourceTree = "<group>"; };
 		84EBC01E21C15AD3006A2066 /* ChihuahuaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChihuahuaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EBC02121C15AD3006A2066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 		84350C9121C227CC00C19187 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				848567C621C72E5600FC9BE3 /* Model */,
+				848567C321C72D0A00FC9BE3 /* View */,
 				84EBC02321C15AD3006A2066 /* BasicFilterViewController.swift */,
 				84EBC04121C49EAD006A2066 /* CatFilterViewController.swift */,
 			);
@@ -101,6 +107,22 @@
 				84350C9321C27F5600C19187 /* BeautyCameraViewController.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		848567C321C72D0A00FC9BE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				848567C421C72DBD00FC9BE3 /* FilterItemCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		848567C621C72E5600FC9BE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				848567C721C72E7800FC9BE3 /* FilterItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		84B083A921C34D2E00CBA245 /* Bulge */ = {
@@ -310,8 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848567C821C72E7800FC9BE3 /* FilterItem.swift in Sources */,
 				84EBC02421C15AD3006A2066 /* BasicFilterViewController.swift in Sources */,
 				84B083AB21C353C400CBA245 /* BulgeViewController.swift in Sources */,
+				848567C521C72DBD00FC9BE3 /* FilterItemCollectionViewCell.swift in Sources */,
 				84350C9021C2194000C19187 /* MenuViewController.swift in Sources */,
 				84EBC04221C49EAD006A2066 /* CatFilterViewController.swift in Sources */,
 				84350C9421C27F5600C19187 /* BeautyCameraViewController.swift in Sources */,

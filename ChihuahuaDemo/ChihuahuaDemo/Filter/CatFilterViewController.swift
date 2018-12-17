@@ -24,6 +24,7 @@ class CatFilterViewController: UIViewController {
     
     lazy private var adapter: ListAdapter = {
         let adapter = ListAdapter(updater: updater, viewController: self)
+//        adapter.dataSource = self
         adapter.collectionView = collectionView
         return adapter
     }()
